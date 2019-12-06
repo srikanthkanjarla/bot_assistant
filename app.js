@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const AssistantV2 = require('ibm-watson/assistant/v2');
 const { IamAuthenticator } = require('ibm-watson/auth');
 const app = express();
-const port = 3002;
+const port = process.env.PORT || 3000;
 
 const ZYCLYX_ASSISTANT_ID = 'c0f508b5-3d96-48ba-8497-5dfb3e42e832';
 const VIRTECH_ASSISTANT_ID = 'aa4be038-5335-40a9-a851-e7b3a98ffd87';
